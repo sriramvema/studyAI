@@ -27,7 +27,7 @@ function Home() {
       const data = await response.json();
       console.log("Response from backend:", data);
 
-      // Navigate to QuestionPage and pass PDF URL via Router state
+
       navigate("/ask", { state: { pdfUrl: data.pdf_url } });
     } catch (error) {
       console.error("Error uploading file:", error);
