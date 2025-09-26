@@ -1,10 +1,13 @@
-# Getting Started with Create React App
+# StudyAI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React web application that uses retrieval augmented generation (RAG) to pull information from uploaded PDFs. I used the sentence-transformers/all-MiniLM-L6-v2 model from Huggingface to perform the RAG procedures. This application's primary use is for students to receive study help in their classes, which is specifically tailored to the material given to them. Once they upload a PDF of their class notes or textbook, each page is loaded into the RAG function and outputs the relevant pages for whatever the student's question is. These pages are given to a Claude model as context to answer the user's question. For this project, I used the claude-3-haiku-20240307 model. I have provided a link below to view a short demo I have prepared of the web app.
 
-## Available Scripts
+### Demo:
+https://drive.google.com/file/d/1tUgXvP7wnt1wOFopQFz5-3vChhBk4LNs/view?usp=sharing
 
-In the project directory, you can run:
+## Backend
+
+In order to run the backend, Go into the api directory in your terminal and run "pip install -r requirements.txt" This will install the necessary libraries for the program. Then run the backend with the command "python app.py" This will have the backend up and running.
 
 ### `npm start`
 
