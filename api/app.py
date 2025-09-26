@@ -96,7 +96,7 @@ def question():
 
 import anthropic
 def answer(question, context):
-    client = anthropic.Anthropic(api_key="YOUR ANTHROPIC API KEY")
+    client = anthropic.Anthropic(api_key="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")
 
     response = client.messages.create(
         model="claude-3-haiku-20240307",  # Or use "claude-3-haiku-20240307" for faster results
