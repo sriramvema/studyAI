@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 
-// PDF.js worker
+
 pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.js`;
 
 function QuestionPage() {
@@ -123,7 +123,7 @@ function QuestionPage() {
           </button>
         </div>
 
-        {/* PDF pages container (flex-grow to fill left column) */}
+        {/* PDF pages container */}
         <div style={{ flexGrow: 1, background: "#070712" }}>
           {fileUrl && (
             <Document file={fileUrl} onLoadSuccess={onDocumentLoadSuccess}>
