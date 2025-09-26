@@ -7,10 +7,10 @@ https://drive.google.com/file/d/1tUgXvP7wnt1wOFopQFz5-3vChhBk4LNs/view?usp=shari
 
 ## Backend
 
-In order to run the backend, Go into the api directory in your terminal and run 
-```pip install -r requirements.txt``` <b>
-This will install the necessary libraries for the program. Then run the backend with the command <b>
-```python app.py``` 
+In order to run the backend, Go into the api directory in your terminal and run <br>
+```pip install -r requirements.txt``` <br>
+This will install the necessary libraries for the program. Then run the backend with the command<br> 
+```python app.py``` <br>
 This will have the backend up and running.
 
 ### `npm start`
