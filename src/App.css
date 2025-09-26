@@ -1,16 +1,15 @@
 .App {
   text-align: center;
-  /* Background image */
-  background-image: url('/public/background.png'); /* put your image in the public folder */
-  background-size: cover;        /* cover entire screen */
-  background-position: center;   /* center the image */
-  background-repeat: no-repeat;  /* don't repeat */
-  min-height: 100vh;             /* ensure it covers full viewport height */
+  background-image: url('/public/background.png');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat; 
+  min-height: 100vh;             
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #a0d2eb;                /* fallback text color */
+  color: #a0d2eb;                
 }
 
 .App-logo {
@@ -56,23 +55,23 @@
 .subtitle {
   margin: 0;
   padding: 0;
-  font-size: 1.2rem; /* Adjust for subtitle size */
-  font-weight: normal; /* Make it lighter than the main title */
+  font-size: 1.2rem; 
+  font-weight: normal;
 }
 
-/* Centered title container stays unchanged */
+
 .center-title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Right-top quarter upload section */
+
 .right-section {
   position: absolute;
-  top: 45%;       /* vertically center in top-right quarter */
-  left: 75%;      /* horizontally center in right half */
-  transform: translate(-50%, -50%); /* center the div exactly at that point */
+  top: 45%;      
+  left: 75%;      
+  transform: translate(-50%, -50%); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,14 +83,14 @@
   padding: 0;
 }
 
-/* Right section text spacing */
+
 .right-section h5 {
-  margin-bottom: 6rem; /* increase space below h5 */
+  margin-bottom: 6rem; 
 }
 
 .right-section h4 {
-  margin-top: 0;       /* ensure no extra top margin */
-  margin-bottom: 0.5rem; /* space between h3 and input */
+  margin-top: 0;      
+  margin-bottom: 0.5rem; 
 }
 
 /* Optional: add a little space above the button */
