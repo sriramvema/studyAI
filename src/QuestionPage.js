@@ -7,8 +7,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.
 
 function QuestionPage() {
   const location = useLocation();
-  const initialPdfUrl = location.state?.pdfUrl || null;
-
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState(null);
   const [retrievedPages, setRetrievedPages] = useState([]);
