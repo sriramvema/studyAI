@@ -6,7 +6,6 @@ import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.js`;
 
 function QuestionPage() {
-  const location = useLocation();
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState(null);
   const [retrievedPages, setRetrievedPages] = useState([]);
