@@ -12,7 +12,7 @@ function QuestionPage() {
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState(null);
   const [retrievedPages, setRetrievedPages] = useState([]);
-  const [fileUrl, setFileUrl] = useState(initialPdfUrl);
+  const [fileUrl] = useState("");
   const [numPages, setNumPages] = useState(null);
   const [pageWidth, setPageWidth] = useState(0);
   const [jumpPage, setJumpPage] = useState("");
