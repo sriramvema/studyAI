@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-
+import { useLocation } from "react-router-dom";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.min.js`;
 
@@ -12,10 +12,17 @@ function QuestionPage() {
   const [numPages, setNumPages] = useState(null);
   const [pageWidth, setPageWidth] = useState(0);
   const [jumpPage, setJumpPage] = useState("");
-
+  
   const leftPaneRef = useRef(null);
   const pageRefs = useRef({});
-
+  const location = useLocation();
+  const [fileUrl, setFileUrl] = useState("");
+  
+  useEffect(() => {
+    if (location.state?.pdfUrl) {
+      setFileUrl(location.state.pdfUrl);
+    }
+  }, [location.state]);
   useEffect(() => {
     const updateWidth = () => {
       if (leftPaneRef.current) setPageWidth(leftPaneRef.current.offsetWidth);
